@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #ed5c8a;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        input[type=text],
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../index.html">
+        <img src="home.svg" alt="home" width="75" height="75" align="left"></a>
+        <br><br><br><br>
+        <form class="center">
+            Item Name:<br><br>
+            <input type="text" id="input-item-name"><br><br>
+            Item Type:<br><br>
+            <select name="input-item-type" id="input-item-type">
+                <option value="Electronics">Electronics</option>
+                <option value="Stationery">Stationery</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Sport Equipment">Sport Equipment</option>
+                <option value="Books">Books</option>
+                <option value="Others">Others</option>
+            </select> <br><br>
+            <button id="proceed-button"> Proceed </button>
+        </form>
+
+       
+        <script src="registerItem3.js"></script>
+</body>
+
+</html>

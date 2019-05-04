@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.full-height-left {
+    height: 100vh;
+    /* min-height: 100vh; */
+    float: left;
+    background-color: pink; /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      pink,
+      white,
+      pink
+    ); /* Standard syntax (must be last) */
+  }
+  
+  .full-height-left:hover {
+      height: 100vh;
+      /* min-height: 100vh; */
+      float: right;
+      background-color: pink; /* For browsers that do not support gradients */
+      background-image: linear-gradient(
+          rgb(221, 166, 175),
+          rgb(212, 212, 212),
+          rgb(221, 166, 175)
+      ); /* Standard syntax (must be last) */
+    }
+  
+  .full-height-right {
+    height: 100vh;
+    /* min-height: 100vh; */
+    background-color: pink; /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+      pink,
+      white,
+      pink
+    ); /* Standard syntax (must be last) */
+  }
+
+  .full-height-right:hover {
+    height: 100vh;
+    /* min-height: 100vh; */
+    background-color: pink; /* For browsers that do not support gradients */
+    background-image: linear-gradient(
+        rgb(221, 166, 175),
+        rgb(212, 212, 212),
+        rgb(221, 166, 175)
+    ); /* Standard syntax (must be last) */
+  }
+  
+  /* a.fill-div {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+  } */
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* height: 50%;
+    width: 50%; */
+   
+  }
+
+  .fix-right{
+    position:fixed;
+    top:12px;
+    right:12px;
+  }
+  
+  .Pic{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    height:100vh;
+  
+    margin-bottom: 1px;
+   
+  }
+
+  .columnR {
+    float: right;
+    width: 50%;
+    padding: 5px;
+    
+  }
+  
+  /* Clearfix (clear floats) */
+  .rowR{
+    content: "";
+    clear: both;
+    display: table;
+   
+    
+  }
+  
+  

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register User</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        font-family: 'Lato', sans-serif;
+        background-color: #ffe1e1;
+    }
+
+    h1 {
+        font-weight: 300;
+    }
+
+    h2 {
+        font-weight: 200;
+    }
+
+    .container {
+        width: 800px;
+        align-content: center;
+
+    }
+
+    .center {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+
+    button {
+        background-color: #ed5c8a;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    input[type=text],
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    #container-2 {
+        visibility: hidden;
+    }
+
+    #error-message {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <a href="../index.html">
+        <img src="home.svg" alt="home" width="75" height="75" align="left"></a>
+    <a href="../index.html">
+        <img src="logo.png" alt="logo" width="75" height="75" align="right"></a>
+    <h1 id="error-message" class="center"></h1>
+    <div class="container center" id="container-1">
+        <div class="content center">
+
+            <div class="container-title">
+                <h1>Register Item</h1>
+                <h2>User's Information</h2>
+            </div>
+
+
+            <form class="center">
+                User ID:<br><br>
+                <input type="text" id="userID" required><br><br>
+            </form>
+            <button id="next-button"> Next</button>
+        </div>
+    </div>
+
+    <div class="container center" id="container-2">
+        <div class="content center">
+
+            <div class="container-title">
+                <h1>Register Item</h1>
+                <h2>Item's Information</h2>
+            </div>
+
+
+            <form class="center">
+                Item Name:<br><br>
+                <input type="text" id="itemName" required><br><br>
+                Item Type:<br><br>
+                <select name="item-type" id="itemType">
+                    <option value="Electronics">Electronics</option>
+                    <option value="Stationery">Stationery</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Sport Equipment">Sport Equipment</option>
+                    <option value="Books">Books</option>
+                    <option value="Others">Others</option>
+                </select>
+            </form>
+            <button id="register-button"> Register </button>
+        </div>
+    </div>
+
+
+    <div class="center" style="text-align: center" id="qr-h1">
+        <!-- <h1>Your Item ID</h1> -->
+        <canvas id="qr"></canvas>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="registerItem.js"></script>
+</body>
+
+</html>
